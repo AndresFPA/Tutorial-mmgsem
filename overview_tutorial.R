@@ -5,7 +5,8 @@
 # This script should be read together with the tutorial paper by Perez Alonso, et al. (2025)
 
 # Install the package from github. devtools (or remotes) package is needed.
-devtools:install_github("AndresFPA/mmgsem")
+devtools::install_github("AndresFPA/mmgsem")
+# remotes::install_github("AndresFPA/mmgsem") # If devtools is returning errors, you can use remotes to install the package
 
 # Load the library
 library("mmgsem")
@@ -146,6 +147,7 @@ summary(model = five_K_fit, se = five_K_se) # Group 21 is isolated in cluster 4 
 
 # Multiple comparison testing
 test.mmgsem(model = five_K_fit, se = five_K_se, multiple_comparison = TRUE) # Clusters 4 and 5 never significantly differ 
+
 
 
 
