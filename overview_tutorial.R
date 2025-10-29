@@ -8,8 +8,9 @@
 devtools::install_github("AndresFPA/mmgsem")
 # remotes::install_github("AndresFPA/mmgsem") # If devtools is returning errors, you can use remotes to install the package
 
-# Load the library
+# Load libraries
 library("mmgsem")
+library("lavaan")
 
 # Load data
 data <- mmgsem::data_example
