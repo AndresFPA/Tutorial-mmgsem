@@ -8,6 +8,9 @@
 devtools::install_github("AndresFPA/mmgsem")
 # remotes::install_github("AndresFPA/mmgsem") # If devtools is returning errors, you can use remotes to install the package
 
+# 2026-10-29 Update: devtools has deprecated the install_github() function. Now, it is recommended to use:
+# pak::pak("AndresFPA/mmgsem") 
+
 # Load libraries
 library("mmgsem")
 library("lavaan")
