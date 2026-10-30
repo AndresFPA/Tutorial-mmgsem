@@ -102,8 +102,8 @@ summary(model = modelSelection_fit, model_selection = T)
 
 # Check the results from some model selection critera in scree plots
 # Convex Hull and AIC
-CH_plot   <- plot(ModelSel = modelSelection_fit, criteria = "Chull")
-AIC3_plot <- plot(ModelSel = modelSelection_fit, criteria = "AIC3")
+CH_plot   <- plot(x = modelSelection_fit, criteria = "Chull")
+AIC3_plot <- plot(x = modelSelection_fit, criteria = "AIC3")
 cowplot::plot_grid(CH_plot$Chull, AIC3_plot$AIC3, labels = c("Convex Hull", "AIC_3"),
                    hjust = c(-2.8, -6), ncol = 1)
 
