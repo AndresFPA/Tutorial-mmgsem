@@ -98,7 +98,7 @@ modelSelection_fit <- ModelSelection(dat      = data,     # Data
                                      seed     = 1,        # Seed for replication purposes
                                      s1_fit   = MM_fit)   # If we have it, input of step 1 (lavaan object of the measurement model)
 
-summary(model = modelSelection_fit, model_selection = T)
+summary(object = modelSelection_fit, model_selection = T)
 
 # Check the results from some model selection critera in scree plots
 # Convex Hull and AIC
@@ -126,7 +126,7 @@ standard_errors <- mmgsem::standard_errors
 
 ## Hypothesis testing 1: Are the betas different from 0?
 # To check the se in a clearer way, one can use the standard_errors object in the summary function
-summary(model = selected_fit, se = standard_errors)
+summary(object = selected_fit, se = standard_errors)
 
 ## Hypothesis testing 2: Are the betas different across clusters?
 # Wald test to check if there is at least one parameter that differs across clusters
